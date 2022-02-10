@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: rgb(198, 198, 204);
 
 }
 
@@ -66,7 +67,7 @@ button {
 }
 
 img {
-  width: 40%;
+  min-width: 40%;
   height: 150px;
   object-fit: cover; /*içerik kutusuna nesneyi en/boy oranını koruyarak, mümkün olduğunca uzatarak veya mümkün olduğunca fazla yer kaplayacak şekilde yerleştirmeyi sağlar.*/
   border: 4px solid rgb(206, 104, 226);
