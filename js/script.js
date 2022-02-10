@@ -181,3 +181,25 @@ dinnerBtn.addEventListener("click", function() {
     content.innerHTML = dinnerMenu;
   })
 })
+
+// To change the color of the button when hovering over it.
+let buttons = document.querySelectorAll("button")
+
+buttons.forEach(btn => {
+  //console.log(btn)
+  btn.addEventListener("mouseover", function(e) {
+    //console.log(e)
+    // console.log(e.currentTarget)
+    let button = e.currentTarget;
+    button.classList.add("color-button")
+
+    btn.addEventListener("mouseout", function(item) {
+      if (item != btn) {
+        button.classList.remove("color-button")
+      }
+    })
+  })
+})
+
+
+
